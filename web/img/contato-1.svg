@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="149" height="112" viewBox="0 0 149 112">
+  <g id="contato" transform="translate(6 6)">
+    <text id="CONTATO-2" data-name="CONTATO" transform="translate(-6 10)" fill="#fec63e" font-size="18" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">CONTATO</tspan></text>
+    <path id="Path_16" data-name="Path 16" d="M0,0H60" transform="translate(0 20)" fill="none"/>
+    <text id="_-_21_99999-9999_-_contato_bikcraft.com_-_Botafogo_-_RJ" data-name="- (21)99999-9999- contato@bikcraft.com- Botafogo - RJ" transform="translate(-5 40)" fill="#fff" font-size="14" font-family="ArialMT, Arial"><tspan x="0" y="13">- (21)99999-9999</tspan><tspan x="0" y="38">- contato@bikcraft.com</tspan><tspan x="0" y="63">- Botafogo - RJ</tspan></text>
+    <path id="Path_18" data-name="Path 18" d="M0,0H60" transform="translate(-6 22)" fill="none" stroke="#fec63e" stroke-width="3"/>
+  </g>
+</svg>

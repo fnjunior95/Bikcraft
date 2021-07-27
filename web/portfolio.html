@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- lembrar de trocar pra pt-br -->
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- titulo da pagina que vai aparecer no navegador -->
+  <title>Bikcraft - Conheça Nosso Portfólio</title>
+  <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bikcraft - Conheça Nosso Portfólio" />
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte." />
+  <meta property="og:url" content="http://bikcraft.com/portfolio.html" />
+  <meta property="og:image" content="http://bikcraft.com/img/og-img.png" />
+  <!-- Icone que vai mostrar na aba do navegador -->
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <!-- declaração do css -->
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+
+
+</head>
+
+<body>
+  <!-- Criação do header da página -->
+  <header class="header">
+    <!-- colocando a logo e tornando um link -->
+    <div class="container">
+      <a href="index.html" class="grid-4">
+        <img src="img/bikcraft.svg" alt="Bikcraft">
+      </a>
+      <!-- criando menu inicial do header -->
+      <nav class="grid-12 header_menu">
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="portfolio.html" class="menu_ativo">Portfólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- criação da introdução da página -->
+  <section class="introducao_interna interna_sobre">
+    <div class="container">
+      <h1 class="fadeInDown" data-anime="400">Portfólio</h1>
+      <p class="fadeInDown" data-anime="800">Conheça os projetos que amamos mostrar</p>
+    </div>
+  </section>
+  <section class="container fadeInDown" data-anime="1200" data-slide="quote">
+    <blockquote class="quote_clientes">
+      <p>"Ótima bike pra vender sua arte na praia feita das coisas que o mundo dá."</p>
+      <!-- Cite é usado para referenciar o autor da citação -->
+      <cite>Millena</cite>
+    </blockquote>
+    <blockquote class="quote_clientes">
+      <p>"Melhor bike do mundo mané gle glé!!"</p>
+      <!-- Cite é usado para referenciar o autor da citação -->
+      <cite>Molusco</cite>
+    </blockquote>
+    <blockquote class="quote_clientes">
+      <p>"Puta bike dahora!"</p>
+      <!-- Cite é usado para referenciar o autor da citação -->
+      <cite>Marcos "Bola" Chiesa</cite>
+    </blockquote>
+  </section>
+  <section class="portfolio fadeInDown" data-anime="1600">
+    <div class="container" data-slide="portfolio">
+      <ul class="portfolio_lista">
+        <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta passeio"></li>
+        <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta retro"></li>
+        <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta esporte"></li>
+      </ul>
+      <ul class="portfolio_lista">
+        <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta retro"></li>
+        <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta passeio"></li>
+        <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta esporte"></li>
+      </ul>
+    </div>
+  </section>
+  <!-- criação quote pré footer -->
+  <div class="quebra">
+    <blockquote class="quote-externo container">
+      <p>"Não tenha nada em sua casa que você não considere útil ou acredita ser bonito"</p>
+      <!-- Cite é usado para referenciar o autor da citação -->
+      <cite>WILLIAM MORRIS</cite>
+    </blockquote>
+  </div>
+  <!-- Criando o footer -->
+  <footer>
+    <div class="footer">
+      <!-- criando o container onde ficaram as infos -->
+      <div class="container">
+        <div class="grid-8 footer_historia">
+          <h3>Nossa História</h3>
+          <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.</p>
+        </div>
+        <div class="grid-4 footer_contato">
+          <h3>Contato</h3>
+          <ul>
+            <li>- 21 3548-2531</li>
+            <li>- contato@bikcraft.com</li>
+            <li>- Botafogo - RJ</li>
+          </ul>
+        </div>
+        <div class="grid-4 footer_redes">
+          <h3>Redes Sociais</h3>
+          <ul>
+            <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Facebook Bikcraft"></a></li>
+            <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram Bikcraft"></a></li>
+            <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter Bikcraft"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="container">
+        <p class="grid-16">Bikcraft 2021. Todos os direitos reservados.</p>
+      </div>
+
+    </div>
+  </footer>
+  <script src="./js/simple-slide.js"></script>
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

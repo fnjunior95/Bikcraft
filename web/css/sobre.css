@@ -1,0 +1,53 @@
+.interna_sobre {
+  background: url(../img/bg-sobre.jpg);
+  background-size: cover;
+}
+/* foi necessário especificar qual era a lista de qualidades de sobre pois o overflow quebrava a página inicial */
+.qualidade_lista_sobre {
+  padding-top: 20px;
+  /* faz o clear fix. limpa a flutuação */
+  overflow: auto;
+}
+/* alinhando a lista de qualidades de sobre */
+.qualidade_lista_sobre li {
+  text-align: center;
+  padding: 20px 40px;
+}
+
+/* formatação dos subtitulos de qualidade */
+.qualidade_lista_sobre li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+/* linha embaixo do subtitulo */
+.qualidade_lista_sobre li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 6px auto;
+}
+.missao_sobre {
+  padding-top: 60px;
+}
+.missao_sobre p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 1em;
+  padding-right: 60px;
+}
+.missao_sobre .lista_valores {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 1em;
+  padding-right: 60px;
+}
+.foto_equipe {
+  padding-top: 20px;
+}

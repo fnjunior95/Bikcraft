@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- lembrar de trocar pra pt-br -->
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- titulo da pagina que vai aparecer no navegador -->
+  <title>Bikcraft - Contato - 21 9999-9999</title>
+  <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bikcraft - Contato - 21 9999-9999" />
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte." />
+  <meta property="og:url" content="http://bikcraft.com/contato.html" />
+  <meta property="og:image" content="http://bikcraft.com/img/og-img.png" />
+  <!-- Icone que vai mostrar na aba do navegador -->
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <!-- declaração do css -->
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+
+
+</head>
+
+<body>
+  <!-- Criação do header da página -->
+  <header class="header">
+    <!-- colocando a logo e tornando um link -->
+    <div class="container">
+      <a href="index.html" class="grid-4">
+        <img src="img/bikcraft.svg" alt="Bikcraft">
+      </a>
+      <!-- criando menu inicial do header -->
+      <nav class="grid-12 header_menu">
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="contato.html" class="menu_ativo">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- criação da introdução da página -->
+  <section class="introducao_interna interna_contato">
+    <div class="container">
+      <h1 class="fadeInDown" data-anime="400">Contato</h1>
+      <p class="fadeInDown" data-anime="800">Tire suas duvidas com a gente</p>
+    </div>
+  </section>
+  <section class="contato fadeInDown" data-anime="1200">
+    <div class="container">
+      <!-- Formulário Orçamento -->
+      <form id="form_contato" method="POST" action="./enviar-sendgrid.php" class="contato_form grid-8 formphp">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+        <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+        <input type="text" class="nao-aparece" name="leaveblank">
+        <label class="nao-aparece">Se você não é um robô, não altere este campo.</label>
+        <input type="text" class="nao-aparece" name="dontchange" value="http://">
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" name="telefone">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <button id="enviar" name="enviar" type="submit" class="btn btn_contato">Enviar</button>
+      </form>
+      <div class="contato_dados grid-8">
+        <h3>Dados</h3>
+        <span>- 21 3548-2531</span>
+        <span>- contato@bikcraft.com</span>
+        <span>- Rua logo ali - Botafogo</span>
+        <span class="dados_end">- Rio de Janeiro - RJ - Brasil</span>
+        <h3>Redes Sociais</h3>
+        <ul>
+          <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt=""></a></li>
+          <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt=""></a></li>
+          <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="container mapa fadeInDown" data-anime="1600">
+    <img src="img/endereco-bikcraft.jpg" alt="Endereço Bikcraft">
+  </section>
+  <!-- criação quote pré footer -->
+  <div class="quebra">
+    <blockquote class="quote-externo container">
+      <p>"Não tenha nada em sua casa que você não considere útil ou acredita ser bonito"</p>
+      <!-- Cite é usado para referenciar o autor da citação -->
+      <cite>WILLIAM MORRIS</cite>
+    </blockquote>
+  </div>
+  <!-- Criando o footer -->
+  <footer>
+    <div class="footer">
+      <!-- criando o container onde ficaram as infos -->
+      <div class="container">
+        <div class="grid-8 footer_historia">
+          <h3>Nossa História</h3>
+          <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.</p>
+        </div>
+        <div class="grid-4 footer_contato">
+          <h3>Contato</h3>
+          <ul>
+            <li>- 21 3548-2531</li>
+            <li>- contato@bikcraft.com</li>
+            <li>- Botafogo - RJ</li>
+          </ul>
+        </div>
+        <div class="grid-4 footer_redes">
+          <h3>Redes Sociais</h3>
+          <ul>
+            <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Facebook Bikcraft"></a></li>
+            <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram Bikcraft"></a></li>
+            <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter Bikcraft"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="container">
+        <p class="grid-16">Bikcraft 2021. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/simple-form.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

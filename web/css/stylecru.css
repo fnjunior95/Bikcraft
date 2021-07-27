@@ -1,0 +1,438 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* criando botão e configurando pra mudar de cor quando passa o mouse em cima */
+.btn {
+  border: 3px solid #fec63e;
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+/* se colocar os 2 nomes da classe .btn.btn-preto:hover ele se torna ainda mais especifico */
+.btn-preto:hover {
+  color: black;
+  border-color: black;
+}
+/* subtitulo padrão do site */
+.subtitulo {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* Linha posterior ao subtitulo */
+.subtitulo:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 8px auto;
+}
+/* Subtitulo interno */
+.subtitulo_interno {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+/* Linha posterior ao subtitulo */
+.subtitulo_interno:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 8px 0;
+}
+/* fazendo com que todas as imagens se comportem como blocos */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Header */
+/* Header bg */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fec63e;
+  padding: 15px 0;
+  /* vai manter o item fixado enquanto a pag é scrollada */
+  z-index: 10;
+}
+/* Alinhamento do menu a direita */
+.header_menu {
+  text-align: right;
+}
+/* Arruma os blocos li para ficarem lado a lado  */
+.header_menu ul li {
+  display: inline-block;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+/* Formatação do menu do site: tamanho de letra, tipo, cor etc */
+.header_menu ul li a {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+/* Coloca cor quando passa o mouse por cima do link */
+.header_menu ul li a:hover {
+  color: #fff;
+}
+/* colocando cor no menu quando usuario esta na pag */
+.header_menu ul li a.menu_ativo {
+  color: #fff;
+}
+/* Introdução */
+/* colocando imagem de fundo da intro / (../)significa que deve voltar uma pasta e procurar a pasta escolhida */
+.introducao {
+  width: 100%;
+  height: 380px;
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 92px;
+  text-align: center;
+  padding-top: 80px;
+}
+/* formatando titulo da intro */
+.introducao h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* formatando citaço e citado */
+.quote-externo {
+  max-width: 320px;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.quote-externo p {
+  font-style: italic;
+}
+/* criando as linhas que envolvem a citação */
+.quote-externo p:before,
+.quote-externo p:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 14px auto 10px auto;
+}
+/* formatando citado */
+.quote-externo cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+/* Introdução interna */
+.introducao_interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+}
+.introducao_interna h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.introducao_interna h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 6px auto 10px auto;
+  background: #fff;
+}
+/* Produtos */
+.produtos {
+  padding: 60px 0;
+}
+/* criando fundo amarelo dos produtos */
+.produtos_lista li {
+  background: #fec63e;
+  text-align: center;
+}
+/* formatação do subtitulo de produtos */
+.produtos_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+/* linha embaixo do subtitulo */
+.produtos_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 2px auto;
+}
+/* ajusta distancia do texto das bordas */
+.produtos_lista li p {
+  padding: 10px 20px 20px 20px;
+}
+/* colocando fundo preto nos icones */
+.produtos_icone {
+  background: #000;
+  padding: 20px;
+  padding-left: 55px;
+}
+/* alinhando call to action ao centro */
+.call {
+  text-align: center;
+  padding-top: 40px;
+  clear: both;
+}
+/* distanciando botão do texto */
+.call p {
+  margin-bottom: 20px;
+}
+/* Portfólio */
+/* colocando fundo preto na sessão portfólio */
+.portfolio {
+  width: 100%;
+  background: black;
+  padding: 40px 0 80px 0;
+}
+/* colocando o subtitulo amarelo */
+.portfolio .subtitulo {
+  color: #fec63e;
+}
+/* linha abaixo do subtitulo colorindo pra amarelo */
+.portfolio .subtitulo:after {
+  background: #fec63e;
+}
+/* distanciando as 2 fotos de cima da de baixo */
+.portfolio_lista li:last-child {
+  margin-top: 20px;
+}
+/* colorindo de branco a frase da call to action */
+.portfolio .call p {
+  color: #fff;
+}
+/* Qualidade */
+/* centralizando os itens */
+/* definindo espaço entre a sessão e a sessão anterior */
+.qualidade {
+  padding: 60px 0;
+}
+/* posicionando as linhas da qualidade */
+.qualidade:after {
+  content: "";
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url("../img/linhas.svg") no-repeat center;
+  position: absolute;
+  top: 209px;
+  right: 162px;
+  /* garantindo que as linhas não se sobrepunham a qualquer conteúdo posterior */
+  z-index: -1;
+}
+/* alinhando imagem ao centro */
+.qualidade img {
+  margin: 0 auto;
+}
+.qualidade_lista {
+  padding-top: 20px;
+}
+/* alinhando a lista de qualidades */
+.qualidade_lista li {
+  text-align: center;
+  padding: 20px 40px;
+}
+/* formatação dos subtitulos de qualidade */
+.qualidade_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+/* linha embaixo do subtitulo */
+.qualidade_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 6px auto;
+}
+/* formatando quebra de estilo. entra imagem pro site não ficar só texto */
+.quebra {
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg") no-repeat center;
+  text-align: center;
+  background-size: cover;
+  padding-top: 40px;
+}
+.quebra .quote-externo {
+  max-width: 400px;
+}
+/* Footer */
+/* criando fundo do footer */
+.footer {
+  width: 100%;
+  background: black;
+  color: #fff;
+  padding: 20px 0;
+}
+/* formatando titulo e colocando a linha inferior  */
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fec63e;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+.footer h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin: 6px 0 12px 0;
+}
+/* separando os itens */
+.footer_historia {
+  padding-right: 40px;
+}
+/* formatando o texto de contato */
+.footer_contato ul li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* colocando os icones lado a lado */
+.footer_redes ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* tornando toda a área do icone clicavel */
+.footer_redes ul li a {
+  border: #fec63e 3px solid;
+  display: block;
+  padding: 10px;
+}
+.footer_redes ul li a:hover {
+  border-color: #fff;
+}
+/* formatando o copy do site */
+.copy {
+  width: 100%;
+  background: #fec63e;
+  padding: 10px;
+}
+/* JAVASCRIPTO */
+/* slide galeria*/
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+/* 6 CSS recomendado para a navegação */
+.js [data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.js [data-slide-nav] > button {
+  display: inline-block;
+  width: 12px;
+  margin: 4px;
+  height: 12px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  background: #1d1d1d;
+  text-indent: -100px;
+  overflow: hidden;
+}
+.js [data-slide-nav] > button.active {
+  background: #fec454;
+}
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+/* FINAL SLIDE GALERIA */
+/* INICIO ANIMAÇÕES SITE  */
+.js [data-anime] {
+  opacity: 0;
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.8s, transform 0.8s;
+}
+/* campos falsos pegam bot */
+.nao-aparece {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+}
+
+/*  Mensagem envio de formulário*/
+#form-sucesso {
+  color: #31aa39;
+}
+#form-erro {
+  color: #f64540;
+}

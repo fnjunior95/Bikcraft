@@ -1,0 +1,162 @@
+/* Estilo tablets */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  /* alinhando icones no mobile */
+  .produtos_icone img {
+    padding-right: 25px;
+  }
+  /* posicionando as linhas da qualidade */
+  .qualidade:after {
+    right: 66px;
+    background: url("../img/linhas-tablet.svg") no-repeat center;
+  }
+  .footer_redes ul li a {
+    width: 40px;
+    height: 40px;
+  }
+  .call {
+    padding-top: 30px;
+  }
+}
+/* Estilo mobile */
+@media only screen and (max-width: 787px) {
+  /* header */
+  .header {
+    position: relative;
+    padding-bottom: 0;
+  }
+  .header img {
+    margin: 0 auto 10px auto;
+  }
+  .header_menu {
+    text-align: center;
+  }
+  .header_menu ul li {
+    margin: 5px;
+  }
+  .header_menu ul li a {
+    border: 4px solid black;
+    width: 136px;
+    display: block;
+    float: left;
+  }
+  .header_menu ul li a:hover {
+    border-color: white;
+  }
+  /* introdução */
+  .introducao {
+    margin-top: 0;
+    padding-top: 65px;
+    background: url("../img/bg-mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .introducao h1 {
+    font-size: 36px;
+  }
+  /* tirando a margem da intro pra ela encostar em cima */
+  .introducao_interna {
+    margin-top: 0;
+  }
+  /* retirando as linhas da qualidade */
+  .qualidade:after {
+    display: none;
+  }
+
+  .call {
+    padding-top: 10px;
+  }
+
+  /* SOBRE */
+  /* deixando aparecencia de ativo no menu */
+  .header_menu ul li a.menu_ativo {
+    border-color: #fff;
+  }
+
+  /* Tirando o padding da direita que estava empurrando o texto e diminuindo a fonte */
+  .missao_sobre p {
+    padding-right: 0px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .missao_sobre ul li {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+/* Produtos */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  /* puxando o titulo pro centro da imagem */
+  .produtos_item h2 {
+    top: -150px;
+  }
+  .produtos_icone {
+    margin: 0 auto;
+  }
+  .produtos_icone img {
+    margin: 0 auto;
+  }
+  .produtos_info p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 30px;
+    height: 121px;
+  }
+  .produtos_info ul li {
+    width: 181px;
+  }
+}
+@media only screen and (max-width: 787px) {
+  .produtos_item h2 {
+    top: -100px;
+    margin-bottom: -68px;
+  }
+  .produtos_icone {
+    padding: 0;
+  }
+  .produtos_icone img {
+    margin: 0 auto;
+  }
+  .produtos_info p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 30px;
+    height: auto;
+  }
+  .produtos_info ul li {
+    width: 149px;
+    font-size: 16px;
+  }
+  .form {
+    padding-right: 0px;
+  }
+  .orcamento_dados {
+    padding-left: 0px;
+  }
+  .btn_orc {
+    margin-bottom: 30px;
+  }
+  .orcamento_dados ul {
+    padding-right: 0;
+  }
+}
+/* Contato */
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .contato_form {
+    padding-right: 50px;
+  }
+  .contato_dados ul li a {
+    width: 43px;
+    height: 43px;
+  }
+}
+@media only screen and (max-width: 787px) {
+  .contato_form {
+    padding-right: 0px;
+  }
+  .btn_contato {
+    margin-bottom: 30px;
+  }
+  .contato_dados {
+    padding-left: 0;
+  }
+}
